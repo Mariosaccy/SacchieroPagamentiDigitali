@@ -72,6 +72,11 @@
             // nmr_saldo
             // 
             this.nmr_saldo.Location = new System.Drawing.Point(341, 119);
+            this.nmr_saldo.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nmr_saldo.Name = "nmr_saldo";
             this.nmr_saldo.Size = new System.Drawing.Size(120, 20);
             this.nmr_saldo.TabIndex = 1;
@@ -79,6 +84,11 @@
             // nmr_numeroCarta
             // 
             this.nmr_numeroCarta.Location = new System.Drawing.Point(33, 88);
+            this.nmr_numeroCarta.Maximum = new decimal(new int[] {
+            999999,
+            0,
+            0,
+            0});
             this.nmr_numeroCarta.Name = "nmr_numeroCarta";
             this.nmr_numeroCarta.Size = new System.Drawing.Size(120, 20);
             this.nmr_numeroCarta.TabIndex = 2;
@@ -146,7 +156,7 @@
             this.pnl_carta.Controls.Add(this.lbl_numero);
             this.pnl_carta.Controls.Add(this.nmr_pin);
             this.pnl_carta.Controls.Add(this.dtp_data);
-            this.pnl_carta.Location = new System.Drawing.Point(269, 173);
+            this.pnl_carta.Location = new System.Drawing.Point(269, 140);
             this.pnl_carta.Name = "pnl_carta";
             this.pnl_carta.Size = new System.Drawing.Size(263, 171);
             this.pnl_carta.TabIndex = 9;
@@ -275,10 +285,10 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pnl_IdApple);
             this.Controls.Add(this.lbl_selta);
+            this.Controls.Add(this.pnl_carta);
             this.Controls.Add(this.btn_aggiungi);
             this.Controls.Add(this.pnl_cripto);
             this.Controls.Add(this.pnl_PayPal);
-            this.Controls.Add(this.pnl_carta);
             this.Controls.Add(this.lbl_credito);
             this.Controls.Add(this.nmr_saldo);
             this.Controls.Add(this.cmb_scelta);

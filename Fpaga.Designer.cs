@@ -56,6 +56,11 @@
             // nmr_importo
             // 
             this.nmr_importo.Location = new System.Drawing.Point(340, 162);
+            this.nmr_importo.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nmr_importo.Name = "nmr_importo";
             this.nmr_importo.Size = new System.Drawing.Size(120, 20);
             this.nmr_importo.TabIndex = 20;

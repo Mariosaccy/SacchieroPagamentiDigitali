@@ -74,11 +74,11 @@ namespace SacchieroPagamentiDigitali
             }
             else if (carta is CPagamentoPayPal Cp)
             {
-                inputPass = txt_pass.Text;
+                inputPass = txt_pass.Text.ToLower().Trim();
 
                 try
                 {
-                    if(string.IsNullOrEmpty(inputPass) || !inputPass.Contains("@"))
+                    if (string.IsNullOrEmpty(inputPass) || inputPass.Length != 4)
                     {
                         throw new PasswordNonValidaException();
                     }
